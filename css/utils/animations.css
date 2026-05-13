@@ -1,0 +1,10 @@
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+@keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+@keyframes modalIn { from{opacity:0;transform:scale(.9) translateY(20px)} to{opacity:1;transform:none} }
+@keyframes pulse { 0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.4)} 50%{box-shadow:0 6px 32px rgba(37,211,102,.6),0 0 0 8px rgba(37,211,102,.1)} }
+.reveal { opacity:0; transform:translateY(30px); transition:opacity .7s ease,transform .7s ease }
+.reveal.visible { opacity:1; transform:none }
+.reveal-delay-1 { transition-delay:.1s }
+.reveal-delay-2 { transition-delay:.2s }
+.reveal-delay-3 { transition-delay:.3s }
+.reveal-delay-4 { transition-delay:.4s }

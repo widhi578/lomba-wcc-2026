@@ -1,0 +1,77 @@
+#katalog{background:var(--cream-dark)}
+.catalog-header{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  margin-bottom:40px;flex-wrap:wrap;gap:20px;
+}
+.filter-tabs{
+  display:flex;gap:8px;flex-wrap:wrap;
+}
+.filter-btn{
+  padding:9px 20px;border-radius:50px;
+  border:1.5px solid rgba(61,31,16,.15);
+  font-size:13px;font-weight:500;color:var(--text-mid);
+  background:var(--white);transition:var(--transition);
+  cursor:pointer;
+}
+.filter-btn.active,.filter-btn:hover{
+  background:var(--brown-mid);border-color:var(--brown-mid);
+  color:var(--gold-light);
+}
+.product-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+}
+.product-card{
+  background:var(--white);border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow-sm);
+  transition:var(--transition);
+  cursor:pointer;
+}
+.product-card:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow-md);
+}
+.product-card.hidden{display:none}
+.product-img{
+  width:100%;height:260px;
+  position:relative;overflow:hidden;
+}
+.product-img-bg{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:80px;
+  transition:transform .4s ease;
+}
+.product-card:hover .product-img-bg{transform:scale(1.05)}
+.product-badge{
+  position:absolute;top:12px;left:12px;
+  padding:5px 12px;border-radius:50px;
+  font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;
+}
+.badge-new{background:var(--gold);color:var(--brown-deep)}
+.badge-best{background:var(--terra);color:var(--white)}
+.badge-limited{background:var(--brown-mid);color:var(--gold-light)}
+.product-info{padding:20px}
+.product-category{
+  font-size:10px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--gold);font-weight:500;margin-bottom:6px;
+}
+.product-name{
+  font-family:'Playfair Display',serif;
+  font-size:18px;font-weight:600;color:var(--brown-deep);
+  margin-bottom:8px;line-height:1.3;
+}
+.product-desc{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:16px}
+.product-footer{display:flex;align-items:center;justify-content:space-between}
+.product-price{
+  font-size:18px;font-weight:700;color:var(--brown-mid);
+  font-family:'Playfair Display',serif;
+}
+.product-price span{font-size:11px;font-weight:400;color:var(--text-muted);font-family:'DM Sans',sans-serif}
+.btn-order{
+  padding:9px 18px;border-radius:50px;
+  background:var(--brown-mid);color:var(--gold-light);
+  font-size:12px;font-weight:600;
+  transition:var(--transition);
+}
+.btn-order:hover{background:var(--gold);color:var(--brown-deep)}

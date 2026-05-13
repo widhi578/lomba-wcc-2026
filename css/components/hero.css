@@ -1,0 +1,149 @@
+#hero{
+  min-height:100vh;
+  display:flex;align-items:center;
+  position:relative;overflow:hidden;
+  background:var(--brown-deep);
+  padding-top:72px;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 70% 50%, #3D1F10 0%, #1A0D07 60%);
+}
+.hero-pattern{
+  position:absolute;inset:0;opacity:.4;
+  background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4882E' fill-opacity='0.15'%3E%3Cpath d='M30 0L60 30L30 60L0 30z'/%3E%3Ccircle cx='30' cy='30' r='6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-glow{
+  position:absolute;right:-10%;top:50%;transform:translateY(-50%);
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle, rgba(196,136,46,.25) 0%, transparent 70%);
+}
+.hero-content{
+  position:relative;z-index:2;
+  max-width:1200px;margin:0 auto;padding:0 5%;
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;
+}
+.hero-badge{
+  display:inline-flex;margin-top:40px;align-items:center;gap:8px;
+  padding:8px 16px;border-radius:50px;
+  border:1px solid rgba(196,136,46,.4);
+  background:rgba(196,136,46,.1);
+  font-size:12px;font-weight:500;letter-spacing:1.5px;
+  color:var(--gold-light);text-transform:uppercase;
+  margin-bottom:24px;
+}
+.hero-badge::before{content:'✦';font-size:10px;color:var(--gold)}
+.hero-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(40px,5vw,68px);
+  font-weight:700;line-height:1.1;
+  color:var(--white);margin-bottom:8px;
+}
+.hero-title em{color:var(--gold-light);font-style:italic}
+.hero-subtitle{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(18px,2vw,24px);
+  color:var(--gold-pale);font-weight:400;
+  font-style:italic;margin-bottom:20px;
+  opacity:.85;
+}
+.hero-desc{
+  font-size:16px;color:rgba(255,255,255,.65);
+  line-height:1.8;max-width:480px;margin-bottom:36px;
+}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.btn-primary{
+  padding:14px 32px;border-radius:50px;
+  background:var(--gold);color:var(--brown-deep);
+  font-weight:600;font-size:15px;letter-spacing:.3px;
+  transition:var(--transition);display:inline-flex;align-items:center;gap:8px;
+}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(196,136,46,.4)}
+.btn-outline{
+  padding:14px 32px;border-radius:50px;
+  border:1.5px solid rgba(196,136,46,.5);
+  color:var(--gold-light);font-weight:500;font-size:15px;
+  transition:var(--transition);display:inline-flex;align-items:center;gap:8px;
+}
+.btn-outline:hover{border-color:var(--gold);background:rgba(196,136,46,.1);transform:translateY(-2px)}
+.hero-stats{
+  display:flex;gap:32px;margin-top:48px;
+  padding-top:32px;margin-bottom:40px;border-top:1px solid rgba(196,136,46,.2);
+}
+.hero-stat-num{
+  font-family:'Playfair Display',serif;
+  font-size:32px;font-weight:700;color:var(--gold-light);
+}
+.hero-stat-label{font-size:12px;color:rgba(255,255,255,.5);letter-spacing:.5px;margin-top:2px}
+.hero-visual{
+  display:flex;flex-direction:column;gap:16px;
+  animation:float 4s ease-in-out infinite;
+}
+.hero-card-main{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(196,136,46,.2);
+  border-radius:var(--radius-lg);margin-top:-40px;padding:28px;
+  backdrop-filter:blur(8px);
+}
+.hero-card-main img{
+  width:100%;height:260px;object-fit:cover;
+  border-radius:var(--radius);margin-bottom:16px;
+  background:linear-gradient(135deg,#3D1F10,#8B3A1A);
+  display:flex;align-items:center;justify-content:center;
+}
+.hero-card-tag{
+  font-size:10px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--gold);font-weight:500;margin-bottom:6px;
+}
+.hero-card-name{
+  font-family:'Playfair Display',serif;font-size:18px;
+  color:var(--white);font-weight:600;
+}
+.hero-card-price{font-size:14px;color:var(--gold-light);margin-top:4px}
+.hero-card-sub{
+  background:rgba(196,136,46,.12);
+  border:1px solid rgba(196,136,46,.2);
+  border-radius:var(--radius);padding:16px 20px;
+  display:flex;align-items:center;gap:14px;
+}
+.hero-card-sub-icon{
+  width:40px;height:40px;border-radius:50%;
+  /*background:rgba(196,136,46,.2);*/
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.hero-card-sub-text{font-size:12px;color:rgba(255,255,255,.7);line-height:1.5}
+.hero-card-sub-title{font-size:14px;font-weight:500;color:var(--white);margin-bottom:2px}
+
+.favor input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.favor {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.favor svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  transition: all 0.3s;
+  fill: #666;
+}
+
+.favor svg:hover {
+  transform: scale(1.1);
+}
+
+.favor input:checked ~ svg {
+  fill: #ffeb49;
+}
