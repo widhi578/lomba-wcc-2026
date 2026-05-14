@@ -11,16 +11,12 @@
   .hero-stats {
     display: flex;
     flex-wrap: wrap; 
-    gap: 20px;
     justify-content: center;
   }
   .about-grid{grid-template-columns:1fr}
   .about-image-wrap{display:none}
   .about-values{grid-template-columns:1fr 1fr}
-   .process-grid {
-    grid-template-columns: 1fr; 
-    gap: 20px; 
-  }
+  .process-grid {grid-template-columns: 1fr;}
   .process-grid::before{display:none}
   .testimonial-slider{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
@@ -36,11 +32,14 @@
     grid-template-columns: 1fr;
     width: 100%;
   }
-  .process-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr;}
   .section{padding:64px 5%}
-  .about-values{grid-template-columns:1fr}
+  .about-values{grid-template-columns:1fr;}
   .hero-actions{flex-direction:column}
   .btn-primary,.btn-outline{text-align:center;justify-content:center}
+  body{
+    overflow-x: hidden;
+  }
 }
 html, body {
     overflow-x: hidden;
