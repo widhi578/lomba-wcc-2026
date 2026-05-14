@@ -8,11 +8,19 @@
   .hamburger{display:flex}
   .hero-content{grid-template-columns:1fr}
   .hero-visual{display:none}
-  .hero-stats{gap:20px}
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+  }
   .about-grid{grid-template-columns:1fr}
   .about-image-wrap{display:none}
   .about-values{grid-template-columns:1fr 1fr}
-  .process-grid{grid-template-columns:1fr 1fr}
+   .process-grid {
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  }
   .process-grid::before{display:none}
   .testimonial-slider{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
@@ -24,10 +32,18 @@
   .hero-desc{font-size:15px}
 }
 @media(max-width:480px){
-  .product-grid{grid-template-columns:1fr}
+  .product-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
   .process-grid{grid-template-columns:1fr}
   .section{padding:64px 5%}
   .about-values{grid-template-columns:1fr}
   .hero-actions{flex-direction:column}
   .btn-primary,.btn-outline{text-align:center;justify-content:center}
 }
+html, body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }

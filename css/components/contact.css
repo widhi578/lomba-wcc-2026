@@ -119,3 +119,11 @@
   margin-bottom:6px;
 }
 .contact-form-desc{font-size:13px;color:var(--text-muted);margin-bottom:28px}
+
+.form-success-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  margin: 20px 0; 
+}

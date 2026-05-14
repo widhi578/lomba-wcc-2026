@@ -6,7 +6,10 @@
 .about-image-main{
   width:100%;aspect-ratio:4/5;
   border-radius:var(--radius-lg);
-  background:linear-gradient(135deg,#3D1F10 0%,#8B3A1A 50%,#C4882E 100%);
+  background-image: url('https://res.cloudinary.com/dhxw63xxj/image/upload/v1778759721/rehan_vfecox.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow:hidden;position:relative;
 }
 .about-image-overlay{
