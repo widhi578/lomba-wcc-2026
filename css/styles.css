@@ -34,7 +34,7 @@
   gap: 24px; 
   margin-top: 60px; 
   position: relative;
-  width: 100%; /* Tambahkan ini agar tidak meluber */
+  width: 100%; 
 }
 /*.process-grid::before { content:''; position:absolute; top:40px; left:calc(12.5% + 20px); right:calc(12.5% + 20px); height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent); opacity:.3; }*/
 .process-card { 
